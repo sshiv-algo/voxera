@@ -1,0 +1,297 @@
+/* ========== Voxera Styling ========== */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  scroll-behavior: smooth;
+  font-family: 'Inter', sans-serif;
+  background-color: #f8f9fa;
+  color: #1e293b;
+}
+
+/* Navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.2rem 3rem;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1000;
+}
+
+nav .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+nav .links a {
+  margin-left: 2rem;
+  font-weight: 500;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #1e293b;
+  transition: color 0.3s;
+}
+
+nav .links a:hover {
+  color: #1d4ed8;
+}
+
+
+.logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1d4ed8;
+}
+
+.nav-links a {
+  margin-left: 2rem;
+  text-decoration: none;
+  font-weight: 500;
+  color: #1e293b;
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #1d4ed8;
+}
+
+/* Section Base */
+section {
+  min-height: 100vh;
+  padding: 6rem 2rem 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: left;
+}
+
+/* HOME Section */
+#home {
+  background: url('images/model1.jpeg') no-repeat center top/cover;
+  color: white;
+  position: relative;
+}
+
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  width: 100%;
+  gap: 2rem;
+}
+
+.home-text {
+  max-width: 600px;
+  padding-top: 2rem; /* Reduce vertical gap */
+}
+
+.home-text h1 {
+  font-size: 6.5rem; /* Reduced from 8rem */
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #000;
+  text-shadow: 0 2px 4px rgba(255, 255, 255, 0.6);
+}
+
+.home-text p {
+  font-size: 1.25rem;
+  margin-bottom: 1.2rem;
+  color: #f1f5f9; /* Light gray for better readability */
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  font-weight: 500;
+}
+
+.home-buttons {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-left: 0.3rem; /* Slight indent to align with VOXERA. */
+}
+
+
+.home-buttons a {
+  padding: 0.65rem 1.5rem;
+  border-radius: 5px;
+  background-color: #1d4ed8;
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.home-buttons a:hover {
+  background-color: #2563eb;
+}
+
+/* ABOUT */
+#about {
+  min-height: 100vh;
+  background: url("images/voxhomewall1.jpg") no-repeat center center/cover;
+  padding: 7rem 2rem 3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+#about h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+#about p {
+  font-size: 1rem;
+  color: #eee;
+  max-width: 800px;
+}
+
+/* Feature Cards */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+  margin-top: 2.5rem;
+  width: 100%;
+  max-width: 1000px;
+}
+
+.feature-card {
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 1.5rem;
+  border-radius: 16px;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  color: #fff;
+  text-align: center;
+}
+
+.feature-card:hover {
+  transform: translateY(-6px);
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.feature-card img {
+  height: 60px;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+
+/* CONTACT */
+/* === Contact Section === */
+#contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 80px 20px;
+  background: url("images/formbg1.png") no-repeat center center/cover;
+  color: #262626;
+}
+
+/* Wrapper to center the form  */
+.contact-form-wrapper {
+  max-width: 600px;
+  width: 100%;
+}
+
+/* Heading */
+.form-heading {
+  font-size: 32px;
+  margin-bottom: 30px;
+  font-weight: 600;
+  text-align: left;
+}
+
+/* Form container */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Two inputs in a row */
+.form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.form-row input {
+  flex: 1;
+}
+
+/* Inputs & textarea: clean underline style */
+.contact-form input,
+.contact-form textarea {
+  border: none;
+  border-bottom: 2px solid #262626;
+  background: transparent;
+  padding: 10px 5px;
+  font-size: 16px;
+  color: #262626;
+  outline: none;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #262626;
+  opacity: 0.7;
+}
+
+/* Button: rounded */
+.contact-form button {
+  align-self: flex-start;
+  padding: 12px 30px;
+  background-color: #3333;
+  color: #fff;
+  font-size: 16px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background-color: #262626;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .home-content {
+    flex-direction: column;
+    text-align: center;
+  }
+  .home-text {
+    align-items: center;
+  }
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+  }
+}
+
